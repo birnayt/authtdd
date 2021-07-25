@@ -1,11 +1,11 @@
 const { User } = require('../../src/app/models');
 
 describe('Authentication', () => {
-  it('should sum two numbers', async () => {
+  it('should authenticate with valid credentials', async () => {
     const user = await User.create({
-      name: 'Lucas',
-      email: 'email1@gmail.com',
-      password_hash: '123132112'
+      name: 'Test',
+      email: 'test@gmail.com',
+      password_hash: 'test123123'
     })
 
     console.log(user);
